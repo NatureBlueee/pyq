@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<script>
+	function openFullSize(event) {
+	   document.getElementById('fullSizeImage').src = event.target.getAttribute('full_img');
+	   document.getElementById('fullSizeOverlay').style.display = "block";
+	}
+
+	function closeFullSize(event) {
+		if (event.target.id !== 'fullSizeImage') {
+			document.getElementById('fullSizeOverlay').style.display = "none";
+		}
+    }
+
+	function openWarningOverlay(event) {
+	   document.getElementById('warningOverlay').style.display = "block";
+	}
+
+	function closeWarningOverlay(event) {
+	   document.getElementById('warningOverlay').style.display = "none";
+	}
+
+	</script>
+	<body >
+			<div id="fullSizeOverlay" style="display:none;" onclick="closeFullSize(event)">
+				<img id="fullSizeImage" src="" alt="Full Size Image"/>
+			</div>
+
+			<div id="warningOverlay" style="display:none;">
+				<label>
+					<div class="alert info" onclick="closeWarningOverlay(event)">
+					   <span class="alertClose"> X </span>
+					   <span class="alertText">
+						   视频号请到微信搜索观看
+						   <br class="clear"/>
+					   </span>
+					</div>
+				</label>
+            </div>
+
+			<div class="header">
+	        	<div class="col-xs-12  text-center">
+	        		朋友圈
+	        	</div>
+	        </div>
+
+	        <div class="cover_container">
+	        	<img src="images/8f9f0ca7-01f7-43f6-9419-9de2696f8fed.jpg" class="cover_img"/>
+	        	<div class="avatar">
+	        	  <h4>Nature</h4>
+	        	  <div class="usr_img_box">
+	        	  	<img src="avatars/wxid_82j94qkvgvea12.png" class="user_logo">
+	        	  </div>
+	            </div>
+	        </div>
+	        <div class="text_box">
+				 <div class="row item">
+    <div class="col-xs-2">
+         <div class="logo01_box">
+             <img src="avatars/wxid_82j94qkvgvea12.png" />
+         </div>
+    </div>
+    <div class="col-xs-10 xs8">
+          <div class="towp">
+              <p class="p1">Nature</p>
+              <p class="p2">突然想听听关于大理的歌，往下一滑这集歌单，看到全是熟悉的歌，坐在地铁上的人泪水直接就从眼睛飙出来了😢😢<br>好久没有去旅游了，好久没有在一个完全放松的状态下享受陌生的人和陌生的城，在大理、在丽江、在全国各地，那是一段段多么神奇而浪漫的日子，一切美好都在不经意的转角处迸发。<br>在那段歌唱的日子里，鸟儿醉着酒守到日出，躺在古城夜晚的石板上念诗，凌晨四点顶着星星月亮和海风🛵向洱海边追一场🌅……<br>🥺🥺🥺旅行一路上，滋养我最深，没有旅行就没有今天的Nature。</p>
+          </div>
+     <div style="width:19rem; overflow:hidden">
+      </div>
+      <div>
+      </div>
+          <div class="texts_box">
+            <p class="time">2024-10-11 16:11:48</p>
+         </div>
+    </div>
+</div>
